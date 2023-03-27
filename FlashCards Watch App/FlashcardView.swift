@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
-
-    // New comment
+import AVFoundation
 
 
 struct FlashcardView: View {
     var flashcard: Flashcard
     
     @State private var showAnswer = false
+    let synthesizer = AVSpeechSynthesizer()
+    
     
     var body: some View {
         VStack {
@@ -61,12 +62,19 @@ struct FlashcardView: View {
         .padding()
         .onTapGesture {
             self.showAnswer.toggle()
+            if self.showAnswer {
+                let utterance = AVSpeechUtterance(string: self.flashcard.answer)
+                utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+                self.synthesizer.speak(utterance)
+            } else {
+                self.synthesizer.stopSpeaking(at: .immediate)
+            }
         }
     }
 }
 
 struct FlashCard_Previews: PreviewProvider {
     static var previews: some View {
-        FlashcardView(flashcard: Flashcard(question: "You", answer: "Tu", info: "casual / familiar"))
+        FlashcardView(flashcard: Flashcard(question: "You", answer: "Tú", info: "casual / familiar"))
     }
 }
