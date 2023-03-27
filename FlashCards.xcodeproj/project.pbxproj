@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06F542A29D12ED400F4E79E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F542929D12ED400F4E79E /* QuestionView.swift */; };
+		A06F542C29D12F2100F4E79E /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F542B29D12F2100F4E79E /* AnswerView.swift */; };
 		A0D420E629D10AB100BEEE62 /* FlashCards Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A0D420E529D10AB100BEEE62 /* FlashCards Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A0D420EB29D10AB100BEEE62 /* FlashCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D420EA29D10AB100BEEE62 /* FlashCardsApp.swift */; };
 		A0D420ED29D10AB100BEEE62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D420EC29D10AB100BEEE62 /* ContentView.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A06F542929D12ED400F4E79E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		A06F542B29D12F2100F4E79E /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		A0D420DF29D10AB100BEEE62 /* FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D420E529D10AB100BEEE62 /* FlashCards Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlashCards Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D420EA29D10AB100BEEE62 /* FlashCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsApp.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				A0D420EC29D10AB100BEEE62 /* ContentView.swift */,
 				A0D420FC29D10ADB00BEEE62 /* FlashCard.swift */,
 				A0D420FE29D1112200BEEE62 /* FlashcardView.swift */,
+				A06F542929D12ED400F4E79E /* QuestionView.swift */,
+				A06F542B29D12F2100F4E79E /* AnswerView.swift */,
 				A0D420EE29D10AB200BEEE62 /* Assets.xcassets */,
 				A0D420F029D10AB200BEEE62 /* Preview Content */,
 			);
@@ -198,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06F542A29D12ED400F4E79E /* QuestionView.swift in Sources */,
 				A0D420FD29D10ADB00BEEE62 /* FlashCard.swift in Sources */,
+				A06F542C29D12F2100F4E79E /* AnswerView.swift in Sources */,
 				A0D420FF29D1112200BEEE62 /* FlashcardView.swift in Sources */,
 				A0D420ED29D10AB100BEEE62 /* ContentView.swift in Sources */,
 				A0D420EB29D10AB100BEEE62 /* FlashCardsApp.swift in Sources */,
