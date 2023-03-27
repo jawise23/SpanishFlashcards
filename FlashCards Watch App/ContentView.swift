@@ -30,14 +30,14 @@ struct ContentView: View {
     ]
 
     var body: some View {
-        ScrollView {
-            VStack() {
-                ForEach(flashcards, id: \.self) { flashcard in
-                    FlashcardView(flashcard: flashcard)
-                }
+        TabView {
+            ForEach(flashcards, id: \.self) { flashcard in
+                FlashcardView(flashcard: flashcard)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .padding()
         }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+        .background(Color.white)
     }
 }
 
