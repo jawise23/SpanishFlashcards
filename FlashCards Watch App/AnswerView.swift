@@ -1,9 +1,10 @@
-//
-//  AnswerView.swift
-//  FlashCards Watch App
-//
-//  Created by Starla Wise on 3/26/23.
-//
+/// A view that displays the answer on a flashcard.
+///
+/// Use this view to display the answer side of a flashcard.
+///
+/// - Parameters:
+///   - answer: The answer to display on the flashcard.
+///   - info: Additional information to display on the flashcard.
 
 import SwiftUI
 

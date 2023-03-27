@@ -1,9 +1,10 @@
-//
-//  QuestionView.swift
-//  FlashCards Watch App
-//
-//  Created by Starla Wise on 3/26/23.
-//
+/// A view that displays the question on a flashcard.
+///
+/// Use this view to display the question side of a flashcard.
+///
+/// - Parameters:
+///   - question: The question to display on the flashcard.
+///   - info: Additional information to display on the flashcard.
 
 import SwiftUI
 

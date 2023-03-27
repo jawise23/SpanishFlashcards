@@ -1,9 +1,7 @@
-//
-//  FlashcardView.swift
-//  FlashCards Watch App
-//
-//  Created by Starla Wise on 3/26/23.
-//
+/// A view that displays a flashcard with a question and an answer.
+///
+/// Use this view to show a single flashcard. The user can toggle between the question and answer by tapping on the card.
+
 
 import SwiftUI
 import AVFoundation
@@ -15,7 +13,6 @@ struct FlashcardView: View {
     @State private var showAnswer = false
     let synthesizer = AVSpeechSynthesizer()
     
-    
     var body: some View {
         VStack {
             if showAnswer {
@@ -26,7 +23,9 @@ struct FlashcardView: View {
         }
         .padding()
         .onTapGesture {
-            self.showAnswer.toggle()
+            withAnimation {
+                self.showAnswer.toggle()
+            }
             if self.showAnswer {
                 let utterance = AVSpeechUtterance(string: self.flashcard.answer)
                 utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
